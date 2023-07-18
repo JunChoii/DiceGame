@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - Dice Game</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/scorepopup.css" />
+  </head>
+  <body>
+    <div id="all">
+      <img src="images/banner.png" id="banner" alt="" />
+      <button id="instruction">Instruction</button>
+
+      <div id="howToPlay">
+        <ul>
+          <li>You will play against the computer.</li>
+          <li>Both players will roll two dice, 3 times.</li>
+          <li>
+            The player with the highest total after 3 rounds wins the match.
+          </li>
+          <li>When both players roll the same total, it is a tie.</li>
+          <li>
+            When you get a 1 on any of your dice, you score 0 for that round.
+          </li>
+          <li>
+            When the pair of the dice is the same, the score will be doubled.
+          </li>
+          <li>Otherwise, the score will be the sum of the two dice.</li>
+          <li>Roll button will roll the dices and every round, you roll them</li>
+          <li>Reset button will reset all the score and you can play new game</li>
+        </ul>
+        <button id="close">Close</button>
+      </div>
+
+      <button id="rollButton">Roll it</button>
+      <button id="resetButton">Reset</button>
+      <h2 id="currentScore"></h2>
+
+      <div id="diceContainer">
+        <div>
+          <h2>Player</h2>
+          <div id="playerDice">
+            <div id="dice1ForPlayer"></div>
+            <div id="dice2ForPlayer"></div>
+          </div>
+          <br />
+          <div id="playerScore1"></div>
+          <br />
+          <div id="playerScore2"></div>
+          <br />
+          <div id="playerScore3"></div>
+        </div>
+        <div>
+          <h2>Computer</h2>
+          <div id="computerDice">
+            <div id="dice1ForComputer"></div>
+            <div id="dice2ForComputer"></div>
+          </div>
+          <br />
+          <div id="computerScore1"></div>
+          <br />
+          <div id="computerScore2"></div>
+          <br />
+          <div id="computerScore3"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/rolldice.js" defer></script>
+    <script src="js/instruction.js" defer></script>
+  </body>
+</html>

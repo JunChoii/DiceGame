@@ -1,0 +1,19 @@
+#popUpBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  transform: translate(-50%, -50%);
+  background-color: #fdeded;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.backToTheGame {
+  background-color: #ab6171;
+}
