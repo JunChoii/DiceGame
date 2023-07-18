@@ -19,7 +19,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 0 5px #333;
   margin-top: 50px;
-  position: relative; /* Add this line */
+  position: relative;
 }
 
 h1 {
@@ -77,6 +77,11 @@ button {
   font-weight: 600;
   color: #fff;
 }
+button:hover {
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+}
 
 #instruction {
   margin-right: 20px;
@@ -90,12 +95,6 @@ button {
   margin-left: 10px;
 }
 
-button:hover {
-  cursor: pointer;
-  background-color: #333;
-  color: #fff;
-}
-
 #howToPlay {
   display: none;
   position: absolute;
@@ -107,7 +106,7 @@ button:hover {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #333333;
+  color: #333;
   background-color: #f5f5f5;
   padding: 20px;
   border: 1px solid #cccccc;
@@ -128,16 +127,46 @@ button:hover {
 
 #howToPlay button {
   width: 100px;
-  background-color: rgb(206, 88, 151);
+  background-color: #ab6171;
   height: 40px;
   padding: 0;
   margin-top: 10px;
 }
 
-
 #close {
-  width: 100px;
-  background-color: rgb(206, 88, 151);
-  height: 40px;
-  padding: 0 0 0 0;
+  background-color: #9179ce;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px 40px;
+  width: 200px;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #fff;
 }
+#close:hover {
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+}
+
+#popUpBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  transform: translate(-50%, -50%);
+  background-color: #fdeded;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.backToTheGame {
+  background-color: #ab6171;
+}/*# sourceMappingURL=index.css.map */
